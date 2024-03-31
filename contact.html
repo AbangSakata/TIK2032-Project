@@ -6,33 +6,83 @@
         <title>Contact</title>
     </head>
     <style>
-          body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            header, nav, main, footer {
-                padding: 20px;
-            }
-            nav ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-            nav ul li a {
-                text-decoration: none;
-                color: #333;
-            }
-            nav ul li a:hover {
-                color: #666;
-            }
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-image: url("purple-background.jpg");
+      margin: 0;
+      padding: 0;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5em; 
+      }
+      main p {
+        font-size: 0.9em; 
+      }
+      .contact-logos {
+        flex-wrap: wrap; 
+        justify-content: center;
+      }
+      .contact-logos li {
+        margin: 5px;
+      }
+    }
+    .pink-background {
+      background-color: rgb(157, 64, 175);
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between;
+      padding: 10px;
+    }
+    header h1, nav ul {
+      margin: 0; 
+      padding: 15px; 
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex; 
+    }
+    nav ul li {
+      margin-right: 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    nav ul li a:hover {
+      color: #666;
+    }
+    main {
+      text-align: center;
+      font-weight: bolder;
+      line-height: 1.5em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 10px;
+    }
+    footer {
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    .contact-logos {
+        display: flex;
+        justify-content: center;
+    }
+    .contact-logos li {
+        list-style: none;
+        margin-right: 10px;
+    }
+    footer p {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
     </style>
     <body>
-        <header>
+        <header class="pink-background">
             <h1>Contact</h1>
             <nav>
                 <ul>
@@ -44,28 +94,26 @@
             </nav>
         </header>
         <main>
-            <h2>Informasi Pribadi</h2>
+            <h2>Informasi Saya</h2>
             <p>Nama          : Savio Palendeng</p>
             <p>NIM           : 220211060043</p>
             <p>Alamat        : Tanjung Batu Lingkungan 4, Kecamatan Wanea, Kota Manado, Sulawesi Utara, Kode Pos : 95117</p>
             <p>Nomor Telepon : (+62)85757160254</p>
+            <br></br>
             <ul>
-             <li>
+             <li class="contact-logos">
                     <a href="https://www.instagram.com/savi.palendeng">
                     <img src="instagram.png" alt="instagram" style="width:42px;height:42px;">
                     </a>
-                </li>
-                <br>
-                </br>
-            <li>
-                <a href="https://wa.me/6285757160254">
-                <img src="whatsapp.png" alt="Whatsapp" style="width:42px;height:42px;">
-                </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://wa.me/6285757160254">
+                    <img src="whatsapp.png" alt="Whatsapp" style="width:42px;height:42px;">
+                    </a>
             </li>
-        </ul>
+            </ul>
         </main>
         <footer>
-            <p>&copy; 2024 Savio Palendeng. All rights reserved.</p>
+            <p>&copy; 2024 Savio Palendeng Website Pribadi. All Rights Reserved.</p>
         </footer>
     </body>
 </html>
