@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-image: url("Image/tosca-background2.jpg");
+      margin: 0;
+      padding: 0;
+    }
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(1, 1fr); 
+      }
+      .gallery img {
+        margin-bottom: 10px; 
+      }
+    }
+    .tosca-background {
+      background-color: rgb(199, 245, 248);
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between;
+      padding: 10px;
+    }
+    header h1, nav ul {
+      margin: 0; 
+      padding: 15px; 
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex; 
+    }
+    nav ul li {
+      margin-right: 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    nav ul li a:hover {
+      color: #b6b3b3;
+    }
+    main {
+      text-align: center;
+      padding: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 10px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    footer p {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: small;
+    }
+    </style>
+</head>
+<body>
+    <header class="tosca-background">
+        <h1>Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <img src="Image/NeymarJrWC2022.jpeg" alt="Gambar 1">
+            <img src="Image/RealMadrid.jpeg" alt="Gambar 2">
+            <img src="Image/Savio.jpeg" alt="Gambar 3">
+        </div>
+    </main>
+    <br>
+    </br>
+    <footer>
+        <p>&copy; 2024 Savio Palendeng Website Pribadi. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
