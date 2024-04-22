@@ -4,28 +4,6 @@ body {
  margin: 0;
  padding: 0;
 }
-/* Mengatur tampilan halaman website pada Tablet */
-@media only screen and (max-width: 768px) {
- body {
-   background-size: cover;
- }
- main {
-   margin: 0 10px;
- }
- article {
-   padding: 20px;
- }
- img {
-   width: 100%;
-   height: auto;
-   margin-bottom: 10px;
- }
- footer {
-   text-align: left;
-   margin: 10px;
- }
- }
- /* Mengatur tampilan halaman website pada Handphone */
 @media only screen and (max-width: 480px) {
  body {
    background-size: cover;
