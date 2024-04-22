@@ -4,45 +4,12 @@ body {
  margin: 0;
  padding: 0;
 }
-/* Mengatur tampilan halaman website pada Tablet */
-@media only screen and (max-width: 768px) {
- body {
-  background-size: cover;
- }
- header {
-  flex-direction: column;
-  align-items: center;
- }
- nav ul {
-  flex-direction: column;
-  text-align: center;
- }
- nav ul li {
-  margin: 10px 0;
- }
-img {
-  width: 120px;
-  height: 120px;
-  margin-top: -30px;
- }
-main {
-  font-size: 1.5em;
- }
-}
-/* Mengatur tampilan halaman website pada Handphone */
 @media only screen and (max-width: 480px) {
  body {
   background-size: cover;
 }
  header h1 {
   font-size: 1.5em;
-}
- nav ul {
-  flex-direction: column;
-  text-align: center;
-}
- nav ul li {
-  margin: 10px 0;
 }
  img {
   width: 100px;
