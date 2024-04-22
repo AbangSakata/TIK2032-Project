@@ -4,22 +4,6 @@ body {
  margin: 0;
  padding: 0;
 }
-/* Mengatur tampilan halaman website pada Tablet */
-@media only screen and (max-width: 768px) {
- body {
-    background-size: cover;
- }
- .gallery {
-   grid-template-columns: repeat(2, 1fr);
-   padding: 10px;
- }
- .gallery img {
-   width: 100%;
-   height: auto;
-   margin-bottom: 10px;
- }
-}
- /* Mengatur tampilan halaman website pada Handphone */
 @media only screen and (max-width: 480px) {
  body {
    background-size: cover;
