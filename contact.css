@@ -4,31 +4,6 @@ body {
  margin: 0;
  padding: 0;
 }
-/* Mengatur tampilan halaman website pada Tablet */
-@media only screen and (max-width: 768px) {
- body {
-   background-size: cover;
- }
- header h1 {
-   font-size: 1.5em;
- }
- main {
-   margin: 0 10px;
-   font-size: 0.9em;
- }
- footer {
-   text-align: left;
-   margin: 10px;
- }
- .contact-logos {
-   flex-wrap: wrap;
-   justify-content: center;
- }
- .contact-logos li {
-   margin: 5px;
- }
- }
- /* Mengatur tampilan halaman website pada Handphone */
 @media only screen and (max-width: 480px) {
  body {
    background-size: cover;
